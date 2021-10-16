@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document preview for Lokalise</title>
+
+  <link rel="stylesheet" href="mvp.css">
+  
+  <!-- Original icons: https://github.com/lokalise-document-preview/browser-extension/tree/master/media -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/">
+        <img alt="Document preview for Lokalise" src="logo.svg" width="auto" height="70">
+      </a>
+      <ul>
+        
+        <li><a href="#">Features</a>
+          <ul>
+            <li><a href="#">Live preview</a></li>
+            <li><a href="#">Preview before download</a></li>
+            <li><a href="#">Translate HTML attributes</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="https://github.com/lokalise-document-preview/" target="_blank">Source code</a></li>
+        <li><a href="https://chrome.google.com/webstore/detail/lokalise-document-preview/egnkinnacilaeckhljnbkaeahioacgba" target="_blank"><mark>Install for Chrome</mark></a></li>
+      </ul>
+    </nav>
+    <h1>HTML documents preview for Lokalise</h1>
+    <p>
+      Live view of a document during editing and during download<br>
+      via a free unofficial open-sourced browser extension.
+    </p>
+    <br>
+    <p><a href="https://chrome.google.com/webstore/detail/lokalise-document-preview/egnkinnacilaeckhljnbkaeahioacgba"><b>Install via Chrome Web Store &rarr;</b></a></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Features</h2>
+    </section>
+
+    <section>
+      <aside>
+        <img alt="HTML live preview for Lokalise" src="https://via.placeholder.com/330x150" height="150">
+        <h3>Live preview</h3>
+        <p>MVP styles your root HTML elements, so you don't need to learn a new CSS framework or naming
+          conventions.</p>
+      </aside>
+      <aside>
+        <img alt="HTML preview before download for Lokalise" src="https://via.placeholder.com/330x150" height="150">
+        <h3>Preview before download</h3>
+        <p>MVP styles your root HTML elements, so you don't need to learn a new CSS framework or naming
+          conventions.</p>
+      </aside>
+      <aside>
+        <img alt="Translate HTML attributes with Lokalise" src="https://via.placeholder.com/330x150" height="150">
+        <h3>Translate HTML attributes</h3>
+        <p>MVP styles your root HTML elements, so you don't need to learn a new CSS framework or naming
+          conventions.</p>
+      </aside>
+    </section>
+
+    <section>
+      <h2>Privacy policy</h2>
+      <p>This browser extension does not collect, send or store any usage information at all.</p>
+      <br>
+      <p style="margin-bottom: 0;">Live preview of documents requires information exchange:</p>
+      <ul style="margin-top: 0;">
+        <li>collects an API token from user and stores it locally in a browser (removed after when extension is removed or browser data is cleaned),</li>
+        <li>collects project params (project ID, filename and target language ID) from the project URL and removes after the tab is closed,</li>
+        <li>sends a request via proxy hosted on Cloudflare Webworker to get a language ISO code from the ID,</li>
+        <li>sends a request via proxy hosted on Cloudflare Webworker to fetch a document preview.</li>
+      </ul>
+      <p>All data exchanged and received to proxy is encrypted (HTTPS) and transferred inside the requrest body only.</p>
+      <p>No data is stored or cached on the proxy web worker level, see the source code.</p>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      Built by&nbsp;<a href="https://terales.info/">Alex Terehov</a>
+    </section>
+  </footer>
+
+</body>
