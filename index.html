@@ -40,19 +40,20 @@
 
   <main>
     <section id="privacy">
-      <h2>Privacy: no personal or usage data is collected or stored</h2>
-      <p>This browser extension does not collect, send or store any usage information at all.</p>
-      <br>
-      <p style="margin-bottom: 0;">Live preview of documents requires information exchange:</p>
-      <ul style="margin-top: 0;">
-        <li>stores an API token locally in a browser (removed after when extension is removed or browser data is cleaned),</li>
-        <li>collects project params (project ID, filename and target language ID) from the project URL and removes after the tab is closed,</li>
-        <li>sends a request via proxy to get a language ISO code from the ID,</li>
-        <li>sends a request via proxy to fetch and decompress a document preview.</li>
-      </ul>
-      <p>All data exchanged and received to proxy is encrypted (HTTPS) and transferred inside the requrest body only.</p>
-      <p>No data is stored or cached on the proxy web worker level, see <a href="https://github.com/lokalise-document-preview">the source code</a> and <a href="https://www.cloudflare.com/en-gb/trust-hub/privacy-and-data-protection/">Cloudflare documentation</a></p>
-    </section>
+      <aside style="width: 600px;">
+        <h3>Privacy: no personal or usage data is collected or stored</h3>
+        <p>This browser extension does not collect, send or store any usage information at all.</p>
+        <p style="margin-bottom: 0;">Live preview of documents requires information exchange with Lokalise API:</p>
+        <ul style="margin-top: 0; padding-left: 1em;">
+          <li>stores an API token locally in a browser (removed after when extension is removed or browser data is cleaned),</li>
+          <li>collects project params (project ID, filename and target language ID) from the project URL and removes after the tab is closed,</li>
+          <li>sends a request via proxy to get a language ISO code from the ID,</li>
+          <li>sends a request via proxy to fetch and decompress a document preview.</li>
+        </ul>
+        <p>All data exchanged and received to proxy is encrypted with HTTPS and transferred inside the requrest body only.</p>
+        <p>No data is stored or cached on the proxy web worker level, see <a href="https://github.com/lokalise-document-preview">the source code</a> and <a href="https://www.cloudflare.com/en-gb/trust-hub/privacy-and-data-protection/">Cloudflare documentation</a>.</p>
+      </aside>
+    </article>
   </main>
 
   <footer>
