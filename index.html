@@ -23,14 +23,8 @@
       </a>
       <ul>
         
-        <li><a href="#">Features</a>
-          <ul>
-            <li><a href="#">Live preview</a></li>
-            <li><a href="#">Preview before download</a></li>
-            <li><a href="#">Translate HTML attributes</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Privacy policy</a></li>
+        
+        <li><a href="#privacy">Privacy policy</a></li>
         <li><a href="https://github.com/lokalise-document-preview/" target="_blank">Source code</a></li>
         <li><a href="https://chrome.google.com/webstore/detail/lokalise-document-preview/egnkinnacilaeckhljnbkaeahioacgba" target="_blank"><mark>Install for Chrome</mark></a></li>
       </ul>
@@ -45,44 +39,19 @@
   </header>
 
   <main>
-    <section>
-      <h2>Features</h2>
-    </section>
-
-    <section>
-      <aside>
-        <img alt="HTML live preview for Lokalise" src="https://via.placeholder.com/330x150" height="150">
-        <h3>Live preview</h3>
-        <p>MVP styles your root HTML elements, so you don't need to learn a new CSS framework or naming
-          conventions.</p>
-      </aside>
-      <aside>
-        <img alt="HTML preview before download for Lokalise" src="https://via.placeholder.com/330x150" height="150">
-        <h3>Preview before download</h3>
-        <p>MVP styles your root HTML elements, so you don't need to learn a new CSS framework or naming
-          conventions.</p>
-      </aside>
-      <aside>
-        <img alt="Translate HTML attributes with Lokalise" src="https://via.placeholder.com/330x150" height="150">
-        <h3>Translate HTML attributes</h3>
-        <p>MVP styles your root HTML elements, so you don't need to learn a new CSS framework or naming
-          conventions.</p>
-      </aside>
-    </section>
-
-    <section>
-      <h2>Privacy policy</h2>
+    <section id="privacy">
+      <h2>Privacy: no personal or usage data is collected or stored</h2>
       <p>This browser extension does not collect, send or store any usage information at all.</p>
       <br>
       <p style="margin-bottom: 0;">Live preview of documents requires information exchange:</p>
       <ul style="margin-top: 0;">
-        <li>collects an API token from user and stores it locally in a browser (removed after when extension is removed or browser data is cleaned),</li>
+        <li>stores an API token locally in a browser (removed after when extension is removed or browser data is cleaned),</li>
         <li>collects project params (project ID, filename and target language ID) from the project URL and removes after the tab is closed,</li>
-        <li>sends a request via proxy hosted on Cloudflare Webworker to get a language ISO code from the ID,</li>
-        <li>sends a request via proxy hosted on Cloudflare Webworker to fetch a document preview.</li>
+        <li>sends a request via proxy to get a language ISO code from the ID,</li>
+        <li>sends a request via proxy to fetch and decompress a document preview.</li>
       </ul>
       <p>All data exchanged and received to proxy is encrypted (HTTPS) and transferred inside the requrest body only.</p>
-      <p>No data is stored or cached on the proxy web worker level, see the source code.</p>
+      <p>No data is stored or cached on the proxy web worker level, see <a href="https://github.com/lokalise-document-preview">the source code</a> and <a href="https://www.cloudflare.com/en-gb/trust-hub/privacy-and-data-protection/">Cloudflare documentation</a></p>
     </section>
   </main>
 
