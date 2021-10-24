@@ -4,9 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Document preview for Lokalise</title>
+  <title>
+    Document preview with Lokalise<br>
+    for translators and localization managers
+  </title>
 
   <link rel="stylesheet" href="mvp.css">
+  <style>
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: var(--border-radius);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      video {
+        opacity: 80%;
+      }
+    }
+  </style>
   
   <!-- Original icons: https://github.com/lokalise-document-preview/browser-extension/tree/master/media -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -29,16 +45,29 @@
         <li><a href="https://chrome.google.com/webstore/detail/lokalise-document-preview/egnkinnacilaeckhljnbkaeahioacgba" target="_blank"><mark>Install for Chrome</mark></a></li>
       </ul>
     </nav>
-    <h1>HTML documents preview for Lokalise</h1>
+    <h1>
+      HTML documents preview within Lokalise<br>
+      for translators, editors and managers
+    </h1>
     <p>
-      Live view of a document during editing and during download<br>
-      via a free unofficial open-sourced browser extension.
+      See the document during tranlation and before download<br>
+      with a free unofficial open-sourced browser extension.
     </p>
     <br>
     <p><a href="https://chrome.google.com/webstore/detail/lokalise-document-preview/egnkinnacilaeckhljnbkaeahioacgba"><b>Install via Chrome Web Store &rarr;</b></a></p>
   </header>
 
   <main>
+    <section style="margin-bottom: 7em;">
+      <h2>
+        Live preview translation within the layout
+      </h2>
+
+      <video autoplay loop muted poster="videos/live-preview-snapshot.png" disablepictureinpicture disableremoteplayback x-webkit-airplay="deny">
+        <source src="videos/live-preview.mp4" type="video/mp4">
+      </video>
+    </section>
+
     <section id="privacy">
       <aside style="width: 600px;">
         <h3>Privacy: no personal or usage data is collected or stored</h3>
